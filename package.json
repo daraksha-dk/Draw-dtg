@@ -1,0 +1,43 @@
+{
+  "name": "draw-app",
+  "version": "1.0.0",
+  "description": "App to design page",
+  "main": "index.js",
+  "engines": {
+    "node": "16.16.0"
+  },
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Daraksha",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.1",
+    "react-typed": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daraksha-dk/Draw-dtg.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/daraksha-dk/Draw-dtg/issues"
+  },
+  "homepage": "https://github.com/daraksha-dk/Draw-dtg#readme"
+}
