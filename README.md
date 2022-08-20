@@ -4,11 +4,9 @@
 
 # web application to draw a design
 
-## Deployed Website
-
 ## Github Repository
 
-https://github.com/daraksha-dk/draw-app
+https://github.com/daraksha-dk/Draw-dtg
 
 #### User authentication/login system
 
